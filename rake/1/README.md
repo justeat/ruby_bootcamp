@@ -1,8 +1,19 @@
 # To run
 
+## default task
 ```shell
-gem install rake
 rake
 ```
 
 You should see `hello world`.
+
+## run multiple tasks in order
+```shell
+rake foo default
+```
+
+You should see:
+```
+something else
+hello world
+```

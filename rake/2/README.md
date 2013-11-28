@@ -1,6 +1,6 @@
 # To run
 
-## Run child task
+## Run the named 'child' task
 ```shell
 rake child
 ```
