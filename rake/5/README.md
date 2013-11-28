@@ -1,5 +1,9 @@
 # 5: Refactor more
 
+Making rake task definitions small is really important, if you want to test your automation or understand it later.
+
+Use OO, classes, all that good stuff.
+
 ## You can create tasks programmatically
 
 * I've generated the tasks in a loop
