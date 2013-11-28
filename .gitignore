@@ -26,3 +26,5 @@ validFromGeneration.config
 !3rdparty/*
 !3rdparty/vstools/bin
 !packages/repositories.config
+
+*.txt
