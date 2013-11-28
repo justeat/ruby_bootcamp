@@ -1,4 +1,4 @@
-# To run
+# 2: Simple dependencies, tracing
 
 ## Run the named 'child' task
 ```shell
@@ -35,3 +35,20 @@ You should see:
 ** Execute (dry run) parent
 ```
 (that is, no actual executions)
+
+## Repeated runs
+```shell
+rake parent --trace
+rake parent --trace
+```
+
+You should see **x2** of:
+```
+```
+** Invoke parent (first_time)
+** Invoke child (first_time)
+** Execute child
+child
+** Execute parent
+parent
+```

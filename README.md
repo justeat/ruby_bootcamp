@@ -21,5 +21,7 @@ ruby -rubygems -e "require 'json'; puts JSON.load('[42]').inspect"
 
 ### Install some gems
 ```shell
-gem install rake bundler
+gem install rake bundler makerakeworkwell
 ```
+
+([makerakeworkwell](http://docs.seattlerb.org/makerakeworkwell/index.html) - resolves dependencies tree-based.)
