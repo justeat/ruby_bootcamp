@@ -4,3 +4,5 @@
 gem install rake
 rake
 ```
+
+You should see `hello world`.
