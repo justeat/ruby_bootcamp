@@ -33,7 +33,8 @@ Should result in this output, plus files.
 ** Invoke middle.txt (first_time)
 ** Invoke lowest.txt (first_time, not_needed)
 ** Execute middle.txt
-** Execute top.txt```
+** Execute top.txt
+```
 
 **Notice** - it didn't need to build `lowest.txt` because it found that was up-to-date.
 
@@ -58,6 +59,8 @@ Should see this output, and all files.  `top.txt` should have been rebuilt.
 
 * `middle.txt` is not rebuilt, because it exists (even though it's newer with different content)
 * `top.txt` is rebuilt because its `middle.txt` dependency had changed.
+
+**Note:** This is different from the default `rake` behaviour - the default wouldn't have rebuilt `top.txt`.  See [makerakeworkwell](https://github.com/seattlerb/makerakeworkwell).
 
 ## Cleanup
 ```shell

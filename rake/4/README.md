@@ -11,7 +11,7 @@
 ## Call rake against a file that's not named Rakefile.rb
 
 ```shell
-rake --trace top
+rake -f Better.rb --trace top
 ```
 
 Should see:
@@ -30,7 +30,7 @@ The files are still where the dependencies are, not the alias tasks.
 
 ## Clean up
 ```
-rake --trace clean
+rake -f Better.rb --trace clean
 ```
 
 Should see
